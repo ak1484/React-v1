@@ -13,3 +13,7 @@ sbse imp file hoti hai apne project ki install or uninstall kr sakte vo package 
 component kitne type k hote hai??
 kinda small part of big machine or a piece of code of that we will reuse same page or dusre page pr bhi use hote hai or component kitne bhi type k bhi ho sakte hai
 many types Fun ,class, HOC,Pure,contolled,uncon,statefull,stateless
+component me component bna sakte hai ??
+ha kr sakte hai but vo uske domain me he hota hai
+kya hum angular or react use kr sakte hai ??
+yas ang me react use kr sakte but  react me ang nhi kr sakte 

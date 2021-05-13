@@ -1,5 +1,8 @@
-// functional component 
-function User(){
-    return<h1> User Functional component</h1>
+// Class component
+import React from "react";
+class User extends React.Component {
+  render() {
+    return <h1> User Class component</h1>;
+  }
 }
 export default User;
