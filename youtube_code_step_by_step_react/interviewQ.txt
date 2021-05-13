@@ -1,3 +1,15 @@
 what is npm??
 node package manager in node_manager ye saare package manage krta hai or build krte time minified krta hai
 anternate for npm??
+npm ka alternate yarn hai
+package.json or package.lock.json me dif kya hai??
+lock toh package ki history rakhti hai sath k sath package ki dependence ka bhi dhyan rakhta hai(node module k tree structure ki detail rakhti hai or package.json ki bhi detail rakhti hai)
+index wali entry point hoti hai--
+public toh html ka he dhyan rakhti hai or header ka kaam rakha hai
+react ka current version kya hai??
+json me dekh lo
+package.json kya hota ??
+sbse imp file hoti hai apne project ki install or uninstall kr sakte vo package me he aati hai or custom command aati hai
+component kitne type k hote hai??
+kinda small part of big machine or a piece of code of that we will reuse same page or dusre page pr bhi use hote hai or component kitne bhi type k bhi ho sakte hai
+many types Fun ,class, HOC,Pure,contolled,uncon,statefull,stateless
