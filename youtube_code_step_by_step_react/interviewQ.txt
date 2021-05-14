@@ -17,3 +17,8 @@ component me component bna sakte hai ??
 ha kr sakte hai but vo uske domain me he hota hai
 kya hum angular or react use kr sakte hai ??
 yas ang me react use kr sakte but  react me ang nhi kr sakte 
+jsx kya hum bina react k bhi use kr sakte hai??
+yup kr sakte hai
+what is state ??
+it is an object to store the data or variable use nhi krte kyoki usme data update nhi hota hai jb change ho data tb
+**react only update data when their data or state updated kyoki state k time rerendering hoti hai.

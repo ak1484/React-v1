@@ -1,19 +1,20 @@
-//click Event and Function
-//never use apple() inside curly braces in function comp
-//{=>alert("apple fun")} we can also use arrow fun
+// state in functional component
+import React,{useState} from 'react';
 function User() {
-  let data = "ankit";
-  function apple() {
-    data = "viki";
-    //thats why we use state and props
-    alert("apple function call");
+  const [data,setData]=useState("ankit")
+  // let data = "ankit";
+  // function updateData() {
+  //   data = "viki";
+  //   alert(data);
+  // }
+  function updateData(){
+    setData("vikram")
   }
   return (
     <>
-      <h1>click Event and Function</h1>
+      <h1>state in functional component</h1>
       <h2>{data}</h2>
-      {/* we can't update data directly using variable */}
-      <button onclick={apple}>Click me</button>
+      <button onClick={updateData}>Update data</button>
     </>
   );
 }
