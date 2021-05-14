@@ -38,4 +38,5 @@ yas kr sakte hai but conditionally verna infinite loop chal sakta hai agar pureC
 CWUM comp k dom se hatne k phele call hota hai ya baad me??
 phele call hota hai!!
 **useEffect Hook CDM ho ya CDU also CWUM ho hr jagah use hota hai basic on condition !!
-**hooks ko class comp me nhi use kr sakte!! 
+**hooks ko class comp me nhi use kr sakte!!
+**useEffect me useState use kr sakte hai but conditionally krna!!

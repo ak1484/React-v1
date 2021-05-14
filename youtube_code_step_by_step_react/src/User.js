@@ -1,17 +1,15 @@
 //useEffect hook
-import React, { useState,useEffect} from "react";
+import React, { useState} from "react";
+import Student from "./Student";
 function User() {
   const [count,setCount]=useState(0)
-  useEffect(()=>{
-    console.warn("use Effect call")
-    //component did mount k wajas se call ho jata hai
-  },[count])
-  //count wala ki wajas se chal rha hai use Effect 
+  const [data,setData]=useState(10)
   return (
     <div>
       <h1>useEffect hook</h1>
-      <h2>{count}</h2>
-      <button onClick={()=>setCount(count+1)}>Update Data</button>
+      <Student data={data} count={count}/>
+      <button onClick={()=>setCount(count+1)}>Update Count</button>
+      <button onClick={()=>setData(data+1)}>Update Data</button>
     </div>
   );
 }
