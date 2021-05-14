@@ -1,12 +1,16 @@
-import React, { Component } from "react";
-class Student extends Component {
-  render() {
-    return (
-      <div style={{backgroundColor:"skyblue",margin:10}}>
-        <h2>Student Name : {this.props.name}</h2>
-        <h2>Student Email : {this.props.email}</h2>
-      </div>
-    );
-  }
+import { useState } from "react";
+function Student() {
+  const [student, setstudent] = useState(2);
+  return (
+    <div>
+      {student == 1 ? (
+        <h1>student 1 component</h1>
+      ) : student == 2 ? (
+        <h1>student 2 component</h1>
+      ) : (
+        <h1>student 3 component</h1>
+      )}
+    </div>
+  );
 }
 export default Student;
