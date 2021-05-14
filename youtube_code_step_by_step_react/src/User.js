@@ -1,27 +1,26 @@
-//component did update
+//Should component Update
 import React, { Component } from "react";
 class User extends Component {
   constructor() {
     super();
     this.state = {
-      count:0,
+      count: 0,
     };
   }
-  componentDidUpdate(preProps,preState,snapshot)
-  {
-     console.warn("CDU",preState,this.state.count)
-    //  if(this.state.count<10)
-    //  {
-    //    this.setState({count:this.state.count+1})
-    //  }
-    //we can update state but with condition in CDU
+  shouldComponentUpdate() {
+    console.warn("SCU", this.state.count);
+    if (this.state.count > 5 && this.state.count < 10) {
+      return true;
+    }
+    return false;
+    //isse state toh update hoti hai pr component Rerender nhi hota hai kyoki return false hai
   }
   render() {
     return (
       <div>
-        <h1>component did update</h1>
+        <h1>Should component Update </h1>
         <h2>{this.state.count}</h2>
-        <button onClick={() => this.setState({ count:this.state.count+1})}>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
           Update Count
         </button>
       </div>
