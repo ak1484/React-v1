@@ -26,3 +26,5 @@ state ko component k bahar use kr sakte hai or state public hai ya private??
 nhi krna chahiye baki ho toh sakti hai or  state public hoti hai
 kya hum class com me usestate use kr sakte hai??
 nope
+fun as a prop send kr sakte hai??
+yup lifting up state
