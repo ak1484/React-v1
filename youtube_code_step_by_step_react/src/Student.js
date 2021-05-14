@@ -1,18 +1,14 @@
 import React, { Component } from "react";
 class Student extends Component {
-    constructor()
+    componentWillUnmount()
     {
-        super()
-        this.state={
-            data:"render"
-        }
+        console.warn("CWUM")
+        //function calling k liye hota or timer bhi use sakte hai
     }
   render() {
-      console.warn("render method",this.state.data)
     return (
       <>
-        <h1>{this.props.name}</h1>
-        <button onClick={()=>this.setState({data:"rerender"})}>rerender prop</button>
+       <h1>Student component</h1>
       </>
     );
   }
