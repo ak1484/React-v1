@@ -1,23 +1,13 @@
-//component will unmount
-import React, { Component } from "react";
-import Student from "./Student";
-class User extends Component {
-  constructor() {
-    super();
-    this.state = {
-      show: true,
-    };
-  }
-  render() {
-    return (
-      <div>
-        <h1>component will unmount</h1>
-        {this.state.show ? <Student /> : null}
-        <button onClick={() => this.setState({ show: !this.state.show })}>
-          Toggle Child
-        </button>
-      </div>
-    );
-  }
+//Hooks in React js
+import React, { useState} from "react";
+function User() {
+  const [data,setData]=useState("ankit")
+  return (
+    <div>
+      <h1>Hooks in React js</h1>
+      <h2>{data}</h2>
+      <button onClick={()=>setData("vikram")}>Update Data</button>
+    </div>
+  );
 }
 export default User;

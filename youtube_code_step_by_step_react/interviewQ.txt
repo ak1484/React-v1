@@ -35,3 +35,5 @@ yup lifting up state
 yes rok sakte hai agar should component update false return kr tabhi .. or ye rendering se phele chalta hai...lekin actual me toh sttate update hoti hai
 CDU me api ko call kr sakte hai ??
 yas kr sakte hai but conditionally verna infinite loop chal sakta hai agar pureComponent nhi use hai toh
+CWUM comp k dom se hatne k phele call hota hai ya baad me??
+phele call hota hai!!
