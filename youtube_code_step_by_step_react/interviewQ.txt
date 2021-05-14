@@ -22,3 +22,5 @@ yup kr sakte hai
 what is state ??
 it is an object to store the data or variable use nhi krte kyoki usme data update nhi hota hai jb change ho data tb
 **react only update data when their data or state updated kyoki state k time rerendering hoti hai.
+state ko component k bahar use kr sakte hai or state public hai ya private??
+nhi krna chahiye baki ho toh sakti hai or  state public hoti hai
