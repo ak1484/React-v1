@@ -1,16 +1,26 @@
-//Pass function as props
-import Student from "./Student";
-function User() {
-  // we can use the same fun in as many child ||reusebility
-  function getData()
+//Life cycle methods
+//constructor life cycle method
+import React, { Component } from "react";
+class User extends Component {
+  constructor()
   {
-    alert("hello from user")
+    //super is javascript concept
+    super()
+    //first constructor then render
+    // console.warn("constructor")
+    this.state={
+      data:"ankit"
+    }
+    //never call api in constructor
   }
-  return (
-    <>
-      <h1>Pass function as props</h1>
-      <Student data={getData}/>
-    </>
-  );
+  render() {
+    console.warn("render")
+    return (
+      <>
+        <h1>Life cycle methods</h1>
+        <h2>Name : {this.state.data}</h2>
+      </>
+    );
+  }
 }
 export default User;
