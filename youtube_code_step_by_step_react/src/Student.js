@@ -1,15 +1,10 @@
-import { useState } from "react";
-function Student() {
-  const [student, setstudent] = useState(2);
+//import { useState } from "react";
+function Student(prop) {
+ // const [student, setstudent] = useState(2);
   return (
     <div>
-      {student == 1 ? (
-        <h1>student 1 component</h1>
-      ) : student == 2 ? (
-        <h1>student 2 component</h1>
-      ) : (
-        <h1>student 3 component</h1>
-      )}
+    <h1>Student component</h1>
+    <button onClick={()=>prop.data()}>Call parent fun</button>
     </div>
   );
 }
