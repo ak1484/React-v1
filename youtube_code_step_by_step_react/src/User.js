@@ -1,27 +1,15 @@
-// state in class component
-import React from 'react';
-class User extends React.Component {
-  constructor()
-  {
-    //super javasript ki property hai
-    super()
-    this.state={
-      // data:"ankit"
-      count:0
-    }
-  }
-  updateData(){
-    // alert("update data")
-    // this.setState({data:"vikram"})
-    this.setState({count:this.state.count+1})
-  }
-  render(){
+//props in functional component with on click change
+import React ,{useState} from 'react'
+import Student from "./Student";
+function User() {
+  const [name,setName]=useState("ankit")
   return (
     <>
-      <h1>state in class component</h1>
-      <h2>{this.state.count}</h2>
-      <button onClick={()=>this.updateData()}>Update data</button>
+      <h1>props in functional component</h1>
+      {/* this why we transfer props in f com */}
+      <Student name={name} email={name+"@test.com"} />
+      <button onClick={()=>setName("vikram")}>Update Name</button>
     </>
-  );}
+  );
 }
 export default User;
