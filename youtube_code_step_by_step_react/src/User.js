@@ -1,25 +1,28 @@
-//component did mount
+//component did update
 import React, { Component } from "react";
 class User extends Component {
   constructor() {
     super();
     this.state = {
-      name: "ankit",
+      count:0,
     };
   }
-  componentDidMount() {
-    console.warn("CDM");
-    //only when component mount
-    //thus we use api inside CDM
+  componentDidUpdate(preProps,preState,snapshot)
+  {
+     console.warn("CDU",preState,this.state.count)
+    //  if(this.state.count<10)
+    //  {
+    //    this.setState({count:this.state.count+1})
+    //  }
+    //we can update state but with condition in CDU
   }
   render() {
-    console.warn("render");
     return (
       <div>
-        <h1>component did mount</h1>
-        <h2>{this.state.name}</h2>
-        <button onClick={() => this.setState({ name: "viki" })}>
-          update name
+        <h1>component did update</h1>
+        <h2>{this.state.count}</h2>
+        <button onClick={() => this.setState({ count:this.state.count+1})}>
+          Update Count
         </button>
       </div>
     );

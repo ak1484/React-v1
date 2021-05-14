@@ -30,3 +30,7 @@ fun as a prop send kr sakte hai??
 yup lifting up state
 **hum html ko bhi prop ki tarah pass kr sate hai or class comp me iss this.props.children ki help se krte hai!!
 **constructor is also a life cycle method
+**snapshot only define when getsnapshot before update tabhi value define hoti hai ...
+**CDU ko update hoe se rok sakte hai ??
+yes rok sakte hai agar should component update false return kr tabhi ..
+ 
